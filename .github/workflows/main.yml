@@ -1,44 +1,49 @@
-name: generate animation
+name: generate snake
 
 on:
-  # run automatically every 24 hours
+  # regenerate every 6 hours so the grid stays fresh
   schedule:
-    - cron: "0 */12 * * *" 
-  
-  # allows to manually run the job at any time
+    - cron: "0 */6 * * *"
+
+  # run manually from the Actions tab
   workflow_dispatch:
-  
-  # run on every push on the main branch
+
+  # run on every push to main
   push:
     branches:
-    - main
-    
-  
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    
+
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: generate github-contribution-grid-snake.svg
+      # Builds the snake from the contribution graph.
+      # Neon palette matches the pixel-city banner: magenta snake, cyan "food" cells on navy.
+      - name: generate snake svgs
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-          
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+            dist/snake-retro.svg?color_snake=#ff2e97&color_dots=#141a33,#0b4a6f,#1282a2,#00b8d9,#00f0ff&color_dot_border=#0b0f1f
+
+      # Publishes dist/ to the `output` branch:
+      # https://raw.githubusercontent.com/<user>/<repo>/output/<file>
+      - name: push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "🐍 update snake"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
