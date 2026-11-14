@@ -6,13 +6,12 @@
   <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=26&duration=2500&pause=1500&color=FF2E97&center=true&vCenter=true&width=600&height=60&lines=HI,+I'M+ALAN_" alt="Hi, I'm Alan" />
 </a>
 <br/>
-<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=12&duration=2800&pause=900&color=00F0FF&center=true&vCenter=true&width=600&height=30&lines=FORWARD+DEPLOYED+ENGINEER;I+CODE+FOR+FUN;INSERT+COIN+TO+CONTINUE" alt="Subtitle" />
+<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=12&duration=2800&pause=900&color=00F0FF&center=true&vCenter=true&width=600&height=30&lines=PLAYER+1+READY;I+CODE+FOR+FUN;INSERT+COIN+TO+CONTINUE" alt="Subtitle" />
 
 <br/>
 
 [![Website](https://img.shields.io/badge/alanchriss.me-0b0f1f?style=for-the-badge&logo=firefoxbrowser&logoColor=ff2e97)](https://alanchriss.me)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0b0f1f?style=for-the-badge&logo=linkedin&logoColor=00f0ff)](https://www.linkedin.com/in/alan-chris-disilva)
-[![Instagram](https://img.shields.io/badge/Instagram-0b0f1f?style=for-the-badge&logo=instagram&logoColor=ff2e97)](https://instagram.com/ft.alxn)
 [![Coffee](https://img.shields.io/badge/Buy_me_a_coffee-0b0f1f?style=for-the-badge&logo=buymeacoffee&logoColor=ffd319)](https://buymeacoffee.com/alanchris)
 
 </div>
@@ -29,7 +28,7 @@
 ```text
  ╔══════════════════════════════════════════╗
  ║  PLAYER ...... Alan Chris D'Silva        ║
- ║  CLASS ....... Forward Deployed Engineer ║
+ ║  CLASS ....... Developer                 ║
  ║  SKILL ....... Codes for fun             ║
  ║  BASE ........ alanchriss.me             ║
  ║  HP .......... ■■■■■■■■■□  90/100        ║
