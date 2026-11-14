@@ -97,11 +97,6 @@
 <img height="165" src="https://github-readme-stats.shion.dev/api/top-langs/?username=alan61503&layout=compact&langs_count=8&bg_color=0b0f1f&title_color=ff2e97&text_color=c9d1ff&border_color=ff2e97" alt="Top languages" />
 
 <img src="https://streak-stats.demolab.com/?user=alan61503&background=0B0F1F&border=FF2E97&stroke=1A2045&ring=FF2E97&fire=FFD319&currStreakNum=00F0FF&currStreakLabel=FF2E97&sideNums=C9D1FF&sideLabels=00F0FF&dates=8B8FB8" alt="Streak" />
-
-<br/><br/>
-<sub><b>🏆 UNLOCKED ACHIEVEMENTS</b></sub><br/><br/>
-<img src="https://github-trophies.vercel.app/?username=alan61503&theme=radical&no-frame=true&no-bg=true&margin-w=15&column=5&title=MultiLanguage,LongTimeUser,Commits,Repositories,PullRequest" alt="Trophies" />
-
 </div>
 
 <br/>
